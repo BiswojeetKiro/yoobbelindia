@@ -50,7 +50,7 @@ padding: 10px;
 .regbtn:hover{
   width: 100%; 
   background-color: #be3944;
-  border-width: 0ch; 
+  border-width: 2px; 
   padding: 12px; 
   color: rgb(255, 255, 255); 
   border-color: thistle;
