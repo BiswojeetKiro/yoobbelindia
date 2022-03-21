@@ -38,6 +38,24 @@ padding: 10px;
   }
 }
 
+.regbtn{
+  width: 100%; 
+  background-color: #d84651; 
+  padding: 10px; 
+  color: white; 
+  font-size: 18px; 
+  text-align: center;
+}
+.regbtn:hover{
+  width: 100%; 
+  background-color: #883e44; 
+  padding: 10px; 
+  color: white; 
+  border-color: thistle;
+  font-size: 18px; 
+  text-align: center;
+}
+
 
 
 .navbar{
