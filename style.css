@@ -135,26 +135,6 @@ display: none;
 }
 }
 
-.howyoobbel2{
-display: none;
-}
-
-@media screen and (min-width: 768px) {
-.howyoobbel2{
-display: block;
-}
-}
-
-.howyoobbel{
-display: block;
-}
-
-@media screen and (min-width: 768px) {
-.howyoobbel{
-display: none;
-}
-}
-
 .jumbotron {
   padding: 0;
   border-radius: 0;
