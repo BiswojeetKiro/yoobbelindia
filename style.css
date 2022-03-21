@@ -17,11 +17,11 @@ padding: 10px;
 
 }
 .regbutton{
-  z-index: 999;
+  z-index:2000;
   background-color: white;
   display: block;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   height: 45px;
   width: 100%;
   padding: 10px;
