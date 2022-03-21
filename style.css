@@ -17,6 +17,8 @@ padding: 10px;
 
 }
 .regbutton{
+  z-index: 999;
+  background-color: white;
   display: block;
   position: fixed;
   bottom: 20px;
