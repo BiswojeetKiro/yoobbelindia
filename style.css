@@ -42,7 +42,7 @@ display: none;
       height: auto;
       text-align: center;
       align-items: center;
-      margin: 20px 0;
+      margin: 20px 0 50px 0;
       }
   
   @media screen and (min-width: 768px) {
@@ -94,7 +94,7 @@ height: 100%;
 width: 100%;
 text-align: center;
 border-radius: 10px;
-background-color: #f6f6f6;
+background-color: #fdfdfd;
 padding: 10px;
 
 }
@@ -269,27 +269,13 @@ font-size: 44px;
     }
   }
 
+
 .video-wrapper{
-display: none;
+
+margin-top: 20px;
 }
 
-@media screen and (min-width: 768px) {
-.video-wrapper{
-display: block;
-margin-top: -320px;
-}
-}
 
-.video-wrapper2{
-display: block;
-margin-top: -100px;
-}
-
-@media screen and (min-width: 768px) {
-.video-wrapper2{
-display: none;
-}
-}
 
 .jumbotron {
   padding: 0;
@@ -319,9 +305,19 @@ text-decoration: none;
 
 .greybg{
 
-  height: 285px;
+  height: auto;
   width: 100%; 
   background-color: #f0f0f0;
+  align-items: center; 
+  padding: 10px;
+}
+
+.greybg1{
+
+  height: auto;
+  width: 100%; 
+  padding: 50px;
+  background-color: #f3f3f3;
   align-items: center; 
   padding:20px;
 }
@@ -329,11 +325,11 @@ text-decoration: none;
 @media screen and (min-width: 768px) {
 .greybg{
 
-  height: 500px;
+  height: auto;
   width: 100%; 
   background-color: #f0f0f0; 
   align-items: center; 
-  padding:20px;
+  padding: 50px;
 }
 }
 
