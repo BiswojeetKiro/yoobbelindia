@@ -214,8 +214,19 @@ margin-top: 5px;
 .text02{
 font-size: 14px; 
 line-height: 28px; 
-color: #4d4d4d; 
-margin-bottom: 5px;
+color: hsl(216, 15%, 52%); 
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+.pb{
+
+
+  display: none;
+}
+
+.pb2{
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,6 +237,17 @@ color: hsl(216, 15%, 52%);
 font-weight: 600;
 margin-bottom: 20px;
 }
+
+.pb{
+
+
+  display: block;
+}
+
+.pb2{
+  display: none;
+}
+
 }
 
 .lead{
@@ -240,9 +262,11 @@ font-size: 15px;
 
 .animate__animated{
 font-style: bold;
-font-weight: 600;
-margin-top: 20px; 
-font-size: 26px;
+font-weight: 900;
+margin-top: 5px; 
+font-size: 27px;
+line-height: 1.4;
+
 
 }
 
