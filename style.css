@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
 
 html, body{
   height: 100%;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
-  color:#222;
+  font-family: "Inter", sans-serif;
+  color:hsl(219, 27%, 20%);
 }
 
 .bg-light{
@@ -220,9 +220,10 @@ margin-bottom: 5px;
 
 @media screen and (min-width: 768px) {
 .text02{
-font-size: 18px; 
+font-size: 20px; 
 line-height: 28px; 
-color: #4d4d4d; 
+color: hsl(216, 15%, 52%); 
+font-weight: 600;
 margin-bottom: 20px;
 }
 }
@@ -239,18 +240,31 @@ font-size: 15px;
 
 .animate__animated{
 font-style: bold;
-font-weight: 510;
+font-weight: 600;
 margin-top: 20px; 
 font-size: 26px;
+
 }
 
 @media screen and (min-width: 768px) {
 .animate__animated{
 font-style: bold;
-margin-top: 100px;
-font-weight: 550; 
-font-size: 44px;
+margin-top: 50px;
+font-weight: 902; 
+font-size: 52px;
+margin-bottom: 1rem;
+line-height: 1.2;
 	}
+}
+
+.d-flex {
+  color:hsl(218, 23%, 23%);
+  font-weight: inherit;
+  line-height: 1.2;
+}
+.d-flex b{
+  color:hsl(358, 70%, 62%);
+  font-weight: inherit;
 }
 
 .animate__animated2{
@@ -509,6 +523,242 @@ text-decoration: none;
 [class*="col-"] {
     padding: 1rem;
 }
+
+
+
+
+
+
+
+/* Style blogs */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  line-height: 1.5;
+}
+
+
+section {
+  margin: 20px 0px;
+  line-height: 1.5;
+}
+
+section h1 {
+  margin: 20px 20px;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+article {
+  display: flex;
+  max-width: 1400px;
+  padding: 4%;
+  justify-content: space-between;
+}
+
+.name{
+  width: auto !important;
+  text-align: left !important;
+  font-size: 12px;
+}
+
+.content {
+  margin: 10px 20px;
+  font-size: 1rem;
+}
+
+.content img {
+  width: 100%;
+  padding: 10px;
+  max-width: 860px;
+  object-fit: cover;
+}
+
+.content h3 {
+  margin: 20px 0px;
+  padding: 10px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.content p {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 10px;
+  max-width: 900px;
+  line-height: 1.5;
+  
+}
+
+.author {
+  display: flex;
+  
+  justify-content: left;
+  
+}
+
+.author_img{
+
+  margin: 10px 0px;
+  padding: 5px;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  object-fit: cover;  
+}
+
+.author img {
+  margin: 10px 10px 10px 0;
+  height: 55px;
+  width: 55px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author p {
+  color: #111;
+}
+
+.recentArticle {
+  margin: 0 20px;
+  width: 24%;
+}
+
+.innerWrap {
+  margin: 20px 0px;
+}
+
+.card_a{
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.innerWrap .card_a {
+  display: flex;
+  margin: 20px 0px;
+  justify-content: left;
+}
+
+.innerWrap .card_a img {
+  max-width: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_a .text {
+  padding-left: 30px;
+
+}
+
+.card_a .text h2 {
+  color: #222;
+  text-align: left;
+  font-size: 16px;
+}
+
+.text .author {
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  nav ul li a {
+      margin: 0 5px;
+      font-size: 15px;
+  }
+
+  .name{
+
+      width: auto !important;
+      text-align: left !important;
+      margin: 0 !important;
+      font-size: 12px;
+  }
+  nav .btn a {
+      margin: 0;
+  }
+  article {
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      padding: 0;
+  }
+  .content img {
+      max-width: 350px;
+  }
+  .content p {
+    text-align: justify;
+      margin: 0 auto;
+
+  }
+
+  .content h4 {
+
+    font-size: 18px;
+    font-weight: bold;
+  
+  }
+
+  .content h3 {
+
+    font-size: 21px;
+    font-weight: bold;
+  
+  }
+
+  .author {
+      flex-direction: column;
+  }
+  .recentArticle {
+      margin: 0 auto;
+      padding: 100px;
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+  .recentArticle h2 {
+      text-align: left;
+      font-size: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .recentArticle {
+      margin: 0px -10px;
+      padding: 50px;
+      text-align: center;
+  }
+  .text h2 {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .recentArticle {
+      margin: 0px -5px;
+      padding: 20px;
+  }
+}
+
+
+
+
+
+
+
 
 
 
