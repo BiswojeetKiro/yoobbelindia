@@ -551,7 +551,6 @@ footer .wrapper { text-align: center; }
 
 .footer-text {
   color: var(--foreground-secondary);
-  max-width: 340px;
   margin-inline: auto;
   margin: auto; /* fallback for margin-inline */
 }
