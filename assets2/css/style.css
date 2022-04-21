@@ -650,7 +650,7 @@ margin: 5px auto;
   audio { flex-grow:1; height:40px; border-radius: 20px;} 
   
   audio::-webkit-media-controls-play-button {
-  background-color: #f295a4;
+  background-color: #fbfbfb;
   border-radius: 50%;}
 
   audio::-webkit-media-controls-play-button:hover {
