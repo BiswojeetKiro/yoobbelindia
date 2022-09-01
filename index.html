@@ -97,8 +97,8 @@
 							style=" padding: 10px; margin-right: 20px;" type="button" class="btn btn-primary">Register
 							Now for Free</button></a>
 						<a href="https://yoobbel.com/" target="_blank"><button type="button"
-							style="padding: 10px 15px; border-width: 2px; color: rgb(70, 70, 70);"
-							class="btn btn-outline-secondary">Visit store</button></a>
+							style="padding: 10px 15px; border-width: 2px;"
+							class="btn btn-secondary">Visit store</button></a>
 					<br>
 					<div style="display: flex; flex-direction: row; width: 100%;">
 						<a href="https://play.google.com/store/apps/details?id=com.yoobbel.forbrands"
@@ -163,10 +163,101 @@
 	<br>
 	<br>
 
+
+	<div class="col-12" style="padding: 0; margin: 30px 0 20px 0;">
+		<h1 style=" text-align: center; margin: 15px 0;" class="animate__animated2 display-4">Yoobbel family</h1>
+	</div>
+	<br>
+
+	<!-- Counter -->
+
+	<div class=" c-no container-fluid" style="margin: 0 auto; align-items: center; text-align: center;">
+		<div class="container" style="margin: 0 auto; align-items: center; text-align: center;">
+			<div class="row" id="counter">
+				<!-- <div class="col-sm-3 counter-Txt"> <div class="icon"><i class="fa fa-truck"></i></div>
+				<span class="counter-value" data-count="52000">0</span>
+				<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Orders processed</div></div> -->
+				<div class="col-sm-4 counter-Txt">
+					<div class="icon"><i class="fa fa-user-plus" style="font-size: 1.5rem;"></i></div>
+					<span class="counter-value" style="font-size: 2rem; font-weight: 600;"
+						data-count="500">0</span>
+					<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Influencers
+						Onboarded</div>
+				</div>
+				<div class="col-sm-4 counter-Txt margin-bot-35">
+					<div class="icon"><i class="fas fa-users" style="font-size: 1.5rem;"></i></div>
+					<span class="counter-value" style="font-size: 2rem; font-weight: 600;"
+						data-count="200">0</span>
+					<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Designers
+						Onboarded</div>
+				</div>
+				<div class="col-sm-4 counter-Txt margin-bot-35">
+					<div class="icon"><i class="fa fa-heart" style="font-size: 1.5rem;"></i></div>
+					<span class="counter-value" style="font-size: 2rem; font-weight: 600;"
+						data-count="20000">0</span>
+					<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Happy Customers
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+
+
+
+	<script>
+
+		var a = 0;
+		$(window).scroll(function () {
+
+			var oTop = $('#counter').offset().top - window.innerHeight;
+			if (a == 0 && $(window).scrollTop() > oTop) {
+				$('.counter-value').each(function () {
+					var $this = $(this),
+						countTo = $this.attr('data-count');
+					$({
+						countNum: $this.text()
+					}).animate({
+						countNum: countTo
+					},
+
+						{
+
+							duration: 2000,
+							easing: 'swing',
+							step: function () {
+								$this.text(Math.floor(this.countNum));
+							},
+							complete: function () {
+								$this.text(this.countNum);
+								//alert('finished');
+							}
+
+						});
+				});
+				a = 1;
+			}
+
+		});
+
+
+
+	</script>
+
+
+
+
+	<br>
+
+
+	
+	<br>
+
 	<div style="max-width: 1200px; margin: 0 auto;">
-		<div class="container-fluid padding">
+		<div class="container-fluid padding" style="background-color: #d84651; border-radius: 10px; padding: 5px 30px;">
 			<div class="col-12" style="padding: 0; margin: 30px 0 20px 0;">
-				<h1 style=" background-color: rgb(248, 248, 248); border-radius: 10px; padding: 20px; color:#1f1f1f; text-align: center; margin: 15px 0;" class="animate__animated2 display-4">How it works</h1>
+				<h1 style=" border-radius: 10px; padding: 20px; color:#ffffff; text-align: center; margin: 15px 0;" class="animate__animated2 display-4">How it works</h1>
 			</div>
 
 			<div class="row text-center padding" style="margin-top: 40px;">
@@ -203,135 +294,59 @@
 		</div>
 		<br>
 
+		<div class="row padding"
+					style="height: auto; width: 100%; margin:0; padding: 20px; background-color: #ffffff;">
+					<div class="row padding" style="margin: 20px auto; max-width:1200px;">
+						<div class="col-md-12 col-lg-6" style="padding: 0 26px;">
+							<p class="animate__animated2"
+								style="font-size: 25px; color: rgb(37, 37, 37); margin:65px 0 0 0;">Your store &
+								dashboard
+							</p>
+							<p class="lead" style=" margin: 25px 0; color: rgb(39, 39, 39);">Launch your brand store
+								in just 2
+								minutes and manage everyting on your fingure-tip
+								using yoobbel for brands application.</p>
+
+							<!-- <a href="#"><button type="button"
+								style=" color: rgb(34, 34, 34); border-color: rgb(39, 39, 39);"
+								class="btn btn-outline-secondary btn-lg">Learn more</button></a> -->
+						</div>
+						<div class="col-lg-6" style="padding: 0;">
+							<img src="img/app.gif" class="img-fluid">
+						</div>
+					</div>
+		</div>
 
 		<div class="row welcome text-center" style="padding:0 !important; margin: 0;"></div>
-		<div class="greybg12" style="padding: 15px;">
-			<div class="container-fluid padding" style="padding: 0 !important;">
-				<div class="row padding"
-					style="height: auto; width: 100%; margin:0; border-radius: 10px; padding: 20px;  background-color: rgb(193, 76, 76);">
-					<div class="row padding" style="margin: 20px auto; max-width:1200px;">
-						<div class="col-md-12 col-lg-6" style="padding: 0 32px;">
-							<p class="animate__animated2"
-								style="font-size: 25px; color: rgb(255, 255, 255); margin:65px 0 0 0;">Refer an Influencer and earn for life time.
-							</p>
-							<p class="lead" style=" margin: 25px 0; color: rgb(255, 255, 255);">Yes you heard it right, drop us a mail if you want to be part of it. Our team will get back to you with the referal code within 72 hours.</p>
-	
-							<!-- <a href="https://www.youtube.com/channel/UC7SYzFX72oLw3oYVh2BlZig" target="blank"><button
-									type="button" style=" color: rgb(32, 32, 32); border-color: rgb(31, 31, 31);"
-									class="btn2 btn-outline-secondary btn-lg">Send email</button></a> -->
-						</div>
-						<div class="col-lg-6">
-							<div class="video-wrapper" style="padding:0;">
-								<a href="mailto:info@yoobbel.com"
-									target="blank">
-									<!-- <button type="button"
-										style=" border-width: 1px; text-decoration: none; color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);"
-										class="btn2 btn-outline-secondary btn-lg">Send email</button> -->
-								<img class="card-img-top" style="border-radius:10px;" src="img/b5a.png">
-							</a>
-							</div>
+	<div class="greybg1" style="padding: 0;">
+		<div class="container-fluid padding" style="padding: 0 !important;">
+			<div class="row padding"
+				style="height: auto; width: 100%; margin:0; border-radius: 10px; padding: 20px;  background-color: rgb(248, 248, 248);">
+				<div class="row padding" style="margin: 20px auto; max-width:1200px;">
+					<div class="col-md-12 col-lg-6" style="padding: 0 32px;">
+						<p class="animate__animated2"
+							style="font-size: 25px; color: rgb(23, 23, 23); margin:65px 0 0 0;">Your brand, your label.
+						</p>
+						<p class="lead" style=" margin: 25px 0; color: rgb(32, 32, 32);">Truly your own brand, all the brand tags, labels and invoices will be printed with your own brand name. Just like any other existing brand in the market. So let's get started with your own brand today.</p>
+
+						<!-- <a href="blogs.html"><button
+								type="button" style=" color: rgb(32, 32, 32); border-color: rgb(31, 31, 31);"
+								class="btn2 btn-outline-secondary btn-lg">Read or Listen our blogs</button></a> -->
+					</div>
+					<div class="col-lg-6">
+						<div class="video-wrapper" style="padding:0;">
+							<img class="card-img-top" style="border-radius:10px;" src="img/b4a.png">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
-		<br>
-		<br>
+	</div>
 
-
-	
-
-
-		<div class="col-12" style="padding: 0; margin: 30px 0 20px 0;">
-			<h1 style=" text-align: center; margin: 15px 0;" class="animate__animated2 display-4">Yoobbel family</h1>
-		</div>
-		<br>
-
-		<!-- Counter -->
-
-		<div class=" c-no container-fluid" style="margin: 0 auto; align-items: center; text-align: center;">
-			<div class="container" style="margin: 0 auto; align-items: center; text-align: center;">
-				<div class="row" id="counter">
-					<!-- <div class="col-sm-3 counter-Txt"> <div class="icon"><i class="fa fa-truck"></i></div>
-					<span class="counter-value" data-count="52000">0</span>
-					<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Orders processed</div></div> -->
-					<div class="col-sm-4 counter-Txt">
-						<div class="icon"><i class="fa fa-user-plus" style="font-size: 1.5rem;"></i></div>
-						<span class="counter-value" style="font-size: 2rem; font-weight: 600;"
-							data-count="500">0</span>
-						<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Influencers
-							Onboarded</div>
-					</div>
-					<div class="col-sm-4 counter-Txt margin-bot-35">
-						<div class="icon"><i class="fas fa-users" style="font-size: 1.5rem;"></i></div>
-						<span class="counter-value" style="font-size: 2rem; font-weight: 600;"
-							data-count="200">0</span>
-						<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Designers
-							Onboarded</div>
-					</div>
-					<div class="col-sm-4 counter-Txt margin-bot-35">
-						<div class="icon"><i class="fa fa-heart" style="font-size: 1.5rem;"></i></div>
-						<span class="counter-value" style="font-size: 2rem; font-weight: 600;"
-							data-count="20000">0</span>
-						<div style="font-size:16px; text-decoration:none; font-weight:400;" class="text">Happy Customers
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-		<br>
+	<br>
 
 
 
-		<script>
-
-			var a = 0;
-			$(window).scroll(function () {
-
-				var oTop = $('#counter').offset().top - window.innerHeight;
-				if (a == 0 && $(window).scrollTop() > oTop) {
-					$('.counter-value').each(function () {
-						var $this = $(this),
-							countTo = $this.attr('data-count');
-						$({
-							countNum: $this.text()
-						}).animate({
-							countNum: countTo
-						},
-
-							{
-
-								duration: 2000,
-								easing: 'swing',
-								step: function () {
-									$this.text(Math.floor(this.countNum));
-								},
-								complete: function () {
-									$this.text(this.countNum);
-									//alert('finished');
-								}
-
-							});
-					});
-					a = 1;
-				}
-
-			});
-
-
-
-		</script>
-
-
-
-
-		<br>
-
-
-		
-		<br>
 
 
 		<!-- <hr> -->
@@ -415,41 +430,10 @@
 				<!-- </div>
 	</div> -->
 
-	<div class="row welcome text-center" style="padding:0 !important; margin: 0;"></div>
-	<div class="greybg1" style="padding: 0;">
-		<div class="container-fluid padding" style="padding: 0 !important;">
-			<div class="row padding"
-				style="height: auto; width: 100%; margin:0; border-radius: 10px; padding: 20px;  background-color: rgb(248, 248, 248);">
-				<div class="row padding" style="margin: 20px auto; max-width:1200px;">
-					<div class="col-md-12 col-lg-6" style="padding: 0 32px;">
-						<p class="animate__animated2"
-							style="font-size: 25px; color: rgb(23, 23, 23); margin:65px 0 0 0;">Your brand, your label.
-						</p>
-						<p class="lead" style=" margin: 25px 0; color: rgb(32, 32, 32);">Truly your own brand, all the brand tags, labels and invoices will be printed with your own brand name. Just like any other existing brand in the market. So let's get started with your own brand today.</p>
 
-						<!-- <a href="blogs.html"><button
-								type="button" style=" color: rgb(32, 32, 32); border-color: rgb(31, 31, 31);"
-								class="btn2 btn-outline-secondary btn-lg">Read or Listen our blogs</button></a> -->
-					</div>
-					<div class="col-lg-6">
-						<div class="video-wrapper" style="padding:0;">
-							<img class="card-img-top" style="border-radius:10px;" src="img/b4a.png">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<br>
 	<br>
-
-
-
-	
-
-
-
 
 	<div class="row welcome text-center" style="padding:0 !important; margin: 0;"></div>
 	<div class="greybg1" style="padding: 0;">
@@ -488,6 +472,7 @@
 	<br>
 
 
+
 	<div class="row welcome text-center" style="padding:0 !important; margin: 0;"></div>
 	<div class="greybg1" style="padding: 0;">
 		<div class="container-fluid padding" style="padding: 0 !important;">
@@ -516,6 +501,41 @@
 
 	<br>
 	<br>
+
+	<div class="row welcome text-center" style="padding:0 !important; margin: 0;"></div>
+		<div class="greybg12" style="padding: 0px;">
+			<div class="container-fluid padding" style="padding: 0 !important;">
+				<div class="row padding"
+					style="height: auto; width: 100%; margin:0; border-radius: 10px; padding: 20px;  background-color: rgb(193, 76, 76);">
+					<div class="row padding" style="margin: 20px auto; max-width:1200px;">
+						<div class="col-md-12 col-lg-6" style="padding: 0 32px;">
+							<p class="animate__animated2"
+								style="font-size: 25px; color: rgb(255, 255, 255); margin:65px 0 0 0;">Refer an Influencer and earn for life time.
+							</p>
+							<p class="lead" style=" margin: 25px 0; color: rgb(255, 255, 255);">Yes you heard it right, drop us a mail if you want to be part of it. Our team will get back to you with the referal code within 72 hours.</p>
+	
+							<!-- <a href="https://www.youtube.com/channel/UC7SYzFX72oLw3oYVh2BlZig" target="blank"><button
+									type="button" style=" color: rgb(32, 32, 32); border-color: rgb(31, 31, 31);"
+									class="btn2 btn-outline-secondary btn-lg">Send email</button></a> -->
+						</div>
+						<div class="col-lg-6">
+							<div class="video-wrapper" style="padding:0;">
+								<a href="mailto:info@yoobbel.com"
+									target="blank">
+									<!-- <button type="button"
+										style=" border-width: 1px; text-decoration: none; color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);"
+										class="btn2 btn-outline-secondary btn-lg">Send email</button> -->
+								<img class="card-img-top" style="border-radius:10px;" src="img/b5a.png">
+							</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<br>
+		<br>
 
 
 
@@ -569,28 +589,7 @@
 				<!-- <div style="max-width: 1200px; margin: 0 auto;">
 		<div class="container-fluid padding" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
 			data-aos-duration="1000"> -->
-				<div class="row padding"
-					style="height: auto; width: 100%; margin:0; padding: 20px; background-color: #ffffff;">
-					<div class="row padding" style="margin: 20px auto; max-width:1200px;">
-						<div class="col-md-12 col-lg-6" style="padding: 0 26px;">
-							<p class="animate__animated2"
-								style="font-size: 25px; color: rgb(37, 37, 37); margin:65px 0 0 0;">Your store &
-								dashboard
-							</p>
-							<p class="lead" style=" margin: 25px 0; color: rgb(39, 39, 39);">Launch your brand store
-								in just 2
-								minutes and manage everyting on your fingure-tip
-								using yoobbel for brands application.</p>
-
-							<!-- <a href="#"><button type="button"
-								style=" color: rgb(34, 34, 34); border-color: rgb(39, 39, 39);"
-								class="btn btn-outline-secondary btn-lg">Learn more</button></a> -->
-						</div>
-						<div class="col-lg-6" style="padding: 0;">
-							<img src="img/app.gif" class="img-fluid">
-						</div>
-					</div>
-				</div>
+	
 
 				<div class="apps">
 					<a href="#"
