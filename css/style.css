@@ -318,6 +318,28 @@ color:red;
 .bg-trans{
 	background-color: transparent;
 }
+
+.timelinem {
+  display: block;
+  
+}
+@media screen and (min-width: 768px) {
+  .timelinem {
+  
+    display: none;
+  }
+  }
+
+.timelinec {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .timelinem {
+  
+    display: block;
+  }
+  }
+
 .text-base-color {
     color: #e62b1e !important;
 }
@@ -924,7 +946,7 @@ border: 4px solid #e62b1ea8;
   background-image: url("../assets/bgmobile.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 95vh;
 }
   .tedxspeaker {
     padding: 5px;
