@@ -434,6 +434,20 @@ display: block;
   top: 3rem;
 }
 
+.featured__tag1 {
+  background-color: antiquewhite;
+  padding: .5rem 1rem;
+  align-items: center;
+  display: flex;
+  color: #222;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  position: absolute;
+  transform: rotate(-90deg);
+  right: -2.05rem;
+  top: 64px;
+}
+
 .featured__tag2 {
   background-color: beige;
   padding: .5rem 1rem;
