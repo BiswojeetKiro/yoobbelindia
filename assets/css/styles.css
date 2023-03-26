@@ -478,14 +478,14 @@ display: block;
   padding: 2rem 0 3rem 0;
 }
 
-.featured__card:hover .featured__button {
+/* .featured__card:hover .featured__button {
   transform: translateY(0);
   opacity: 1;
 }
 
 .featured__card:hover .featured__price {
   margin-bottom: var(--mb-1-5);
-}
+} */
 
 /*=============== STORY ===============*/
 .story__container {
