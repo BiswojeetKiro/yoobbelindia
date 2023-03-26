@@ -473,10 +473,10 @@ display: block;
   opacity: 0;
 }
 
-.featured__card:hover {
+/* .featured__card:hover {
   box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
   padding: 2rem 0 3rem 0;
-}
+} */
 
 /* .featured__card:hover .featured__button {
   transform: translateY(0);
