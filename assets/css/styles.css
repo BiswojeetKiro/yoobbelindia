@@ -12,7 +12,7 @@
   --title-color: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 55%);
-  --body-color: hsl(0, 0%, 99%);
+  --body-color: hsl(0, 0%, 97.5%);
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
 
@@ -444,7 +444,7 @@ display: block;
   font-weight: var(--font-medium);
   position: absolute;
   transform: rotate(-90deg);
-  right: -2.05rem;
+  right: -2.0rem;
   top: 64px;
 }
 
@@ -512,7 +512,7 @@ display: block;
 }
 
 .story__description {
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: 0;
 }
 
 .story__images {
@@ -1127,7 +1127,7 @@ display: block;
   }
 
   .products__container {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
     justify-content: center;
     gap: 2.5rem;
   }
