@@ -1,958 +1,1228 @@
- <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Yoobbel Supply</title>
-        <!-- Google tag (gtag.js) -->
+    <title>Yoobbel Supply</title>
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8S12DBJDX8"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'G-8S12DBJDX8');
+gtag('config', 'G-8S12DBJDX8');
 </script>
 
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img style="height: auto; width: 20px; margin-right: 5px;" src="https://yoobbel.com/image/catalog/Logos/logo_icon.png"> Yoobbel Supply
-                </a>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img style="height: auto; width: 20px; margin-right: 5px;" src="https://yoobbel.com/image/catalog/Logos/logo_icon.png"> Yoobbel Supply
+            </a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#featured" class="nav__link">Products</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#Printings" class="nav__link">Printings</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#new" class="nav__link">Clients</a>
-                        </li>
-                    </ul>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#Printings" class="nav__link">Printings</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">Clients</a>
+                    </li>
+                </ul>
 
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x' ></i>
-                    </div>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
                 </div>
-
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <!-- <i class='bx bx-moon change-theme' id="theme-button"></i> -->
-
-                    <!-- <div class="nav__shop" id="cart-shop">
-                        <i class='bx bx-shopping-bag' ></i>
-                    </div> -->
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class='bx bx-grid-alt' ></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== CART ====================-->
-        <div class="cart" id="cart">
-            <i class='bx bx-x cart__close' id="cart-close"></i>
-
-            <h2 class="cart__title-center">My Cart</h2>
-
-            <div class="cart__container">
-                <article class="cart__card">
-                    <div class="cart__box">
-                        <img src="assets/img/featured1.png" alt="" class="cart__img">
-                    </div>
-
-                    <div class="cart__details">
-                        <h3 class="cart__title">Jazzmaster</h3>
-                        <span class="cart__price">$1050</span>
-
-                        <div class="cart__amount">
-                            <div class="cart__amount-content">
-                                <span class="cart__amount-box">
-                                    <i class='bx bx-minus' ></i>
-                                </span>
-
-                                <span class="cart__amount-number">1</span>
-
-                                <span class="cart__amount-box">
-                                    <i class='bx bx-plus' ></i>
-                                </span>
-                            </div>
-
-                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="cart__card">
-                    <div class="cart__box">
-                        <img src="assets/img/featured3.png" alt="" class="cart__img">
-                    </div>
-
-                    <div class="cart__details">
-                        <h3 class="cart__title">Rose Gold</h3>
-                        <span class="cart__price">$850</span>
-
-                        <div class="cart__amount">
-                            <div class="cart__amount-content">
-                                <span class="cart__amount-box">
-                                    <i class='bx bx-minus' ></i>
-                                </span>
-
-                                <span class="cart__amount-number">1</span>
-
-                                <span class="cart__amount-box">
-                                    <i class='bx bx-plus' ></i>
-                                </span>
-                            </div>
-
-                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="cart__card">
-                    <div class="cart__box">
-                        <img src="assets/img/new1.png" alt="" class="cart__img">
-                    </div>
-
-                    <div class="cart__details">
-                        <h3 class="cart__title">Longines Rose</h3>
-                        <span class="cart__price">$980</span>
-
-                        <div class="cart__amount">
-                            <div class="cart__amount-content">
-                                <span class="cart__amount-box">
-                                    <i class='bx bx-minus' ></i>
-                                </span>
-
-                                <span class="cart__amount-number">1</span>
-
-                                <span class="cart__amount-box">
-                                    <i class='bx bx-plus' ></i>
-                                </span>
-                            </div>
-
-                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
-                        </div>
-                    </div>
-                </article>
             </div>
 
-            <div class="cart__prices">
-                <span class="cart__prices-item">3 items</span>
-                <span class="cart__prices-total">$2880</span>
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <!-- <i class='bx bx-moon change-theme' id="theme-button"></i> -->
+
+                <!-- <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div> -->
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Jazzmaster</h3>
+                    <span class="cart__price">$1050</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured3.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Rose Gold</h3>
+                    <span class="cart__price">$850</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/new1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Longines Rose</h3>
+                    <span class="cart__price">$980</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">$2880</span>
+        </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+           
+            <div style="width: 100%; height: auto; align-items: center; text-align: center;">
+            <img src="https://yoobbel.com/image/catalog/App%20images/Supply/supply1a.jpg" style="height: auto; width: 100%; margin-top:60px; max-width: 1200px;"/>
+            </div>
+         
+        </section>
+
+
+        <div class="featured__data" style="text-align: center; margin-top: 20px;">
+            <h3 class="featured__title">Customized Apparels</h3>
+            <p style="font-size: 12px; margin-bottom: 5px;">Get your custom designed bulk order at best price from India.</p>
+            <span class="featured__price">Contact us for more details</span>
+        </div>
+
+
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                Products
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">CODE- Y13</span>
+                    <!-- <a href="sampe images1.html"><span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span></a> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np10.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Smooth Polyester T-shirt</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Round Neck | Polyester | 150-160 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹109 + Printing</span>
+                    </div>
+
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">CODE- Y14</span>
+                    <!-- <a href="sampe images1.html"><span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span></a> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np1.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Dryfit Round Neck T-shirt</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Round Neck | Polyester | 150-160 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹139 + Printing</span>
+                    </div>
+
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y15</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np9.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Polo smooth Polyester Tees</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | Polyester | 160-170gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹149 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y16</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np7.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Dryfit premium T-shirt</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | Dryfit | 180 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹199 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+
+                <article class="featured__card">
+                    <span class="featured__tag">CODE- Y17</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/pr4.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Round Neck Cotton T-shirt</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Round Neck | Cotton | 180-200 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹199 + Printing</span>
+                    </div>
+
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">CODE- Y17A</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/pr4a.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Premium Cotton T-shirt</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Round Neck | Cotton | 180-200 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹229 + Printing</span>
+                    </div>
+
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">CODE- Y18</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/pr6a.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">PC Cotton Polo neck</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | PC Cotton | 220-240 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹249 + Printing</span>
+                    </div>
+
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y19</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/pr7a.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Premium cotton Polo</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | Pure Cotton | 220-240 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹349 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y20</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/pr8a.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Premium Fleece Hoodie</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Hoodie | Fleece cotton | 380-400 gsm | MOQ: 50</p>
+                        <span class="featured__price">Bulk Price: ₹459 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-7978023643\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:7978288641" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y21</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np12.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Wind Cheater Jacket</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Jacket | NS Lycra | MOQ: 50</p>
+                        <span class="featured__price">Bulk Price: ₹259 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-7978023643\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:7978288641" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y22</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np15.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Lycra Jacket</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Jacket | 4-Way Lycra | MOQ: 50</p>
+                        <span class="featured__price">Bulk Price: ₹299 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-7978023643\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:7978288641" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y23</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np2.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Promotional Caps</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Cap | PC Cotton | 160 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹59 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y24</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="assets/img/pr8.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Drawstring Bags</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Bag | Polyester | 140 gsm | MOQ: 100</p>
+                        <span class="featured__price">Plain Price: ₹69 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y25</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="assets/img/pr9.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Badges with print</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Badges | Fiber | Glossy print | MOQ: 500</p>
+                        <span class="featured__price">Plain Price: ₹25 + Printing</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+                <article class="featured__card">
+               
+                    <span class="featured__tag">CODE- Y26</span>
+                    <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
+                    <!-- <span class="featured__tag2">Top Selling</span> -->
+
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Custom%20Print/np13.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Sipper Bottle with print</h3>
+                        <p style="font-size: 12px; margin-bottom: 5px;">Sipper | Metal | Printed | MOQ: 50</p>
+                        <span class="featured__price">With Print Price: ₹199</span>
+                    </div>
+
+                    <div class="wacall"> 
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #0bbd59;
+                      border-radius: 5px;
+                      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      margin: 10px 1.5%;">
+                       <div style="align-items: center; display: flex; ">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
+                         <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
+                      </div>
+                      </a>
+                      
+                      <a href="tel:6372995346" style="height: 50px; width: 48%; display: flex; align-items: center;
+                      justify-content: center;
+                      background-color: #1185d9;
+                       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+                      border-radius: 5px;
+                      margin: 10px 1.5%;">
+                      <div style="align-items: center; display: flex;">
+                        <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
+                        <span style="color: white;">Phone call</span>
+                       </div>
+                       </a>
+                        
+                      </div>
+
+
+                    <!-- <button class="button featured__button">ADD TO CART</button> -->
+                </article>
+
+
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container" id="Printings">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                       With or Withoud print
+                    </h2>
+
+                    <h1 class="story__title">
+                        Printed products at <br> best price
+                    </h1>
+
+                    <p class="story__description">
+                        If you want the above t-shirts with print, then contact our team members to get 
+                        the best quotation for your design. We use multiple printing methods depending upon your requirements, which are mentioned below.
+                    </p>
+
+                    <!-- <a href="#" class="button button--small">Discover</a> -->
+                </div>
+                <div class="story__images">
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/IMG_640011.JPG" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Printings
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/dtf01.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">DTF Print</h3>
+                    <span class="products__price">Multi-Color</span>
+
+                    <!-- <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button> -->
+                </article>
+
+                <article class="products__card">
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/screen01.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">Screen Print</h3>
+                    <span class="products__price">Solid Color</span>
+
+                    <!-- <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button> -->
+                </article>
+
+                <article class="products__card">
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/vinyl01.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">Vinyl Print</h3>
+                    <span class="products__price">Solid Color</span>
+
+                    <!-- <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button> -->
+                </article>
+
+                <article class="products__card">
+                    <img src="https://yoobbel.com/image/catalog/App%20images/Supply/subli01.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">Sublimation</h3>
+                    <span class="products__price">Multi (Light polyester)</span>
+
+                    <!-- <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button> -->
+                </article>
+
+                <!-- <article class="products__card">
+                    <img src="assets/img/product5.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Duchen</h3>
+                    <span class="products__price">$950</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article> -->
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <!-- <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Lee Doe</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Samantha Mey</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Raul Zaman</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/testimonial.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section> -->
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                Our Clients
+            </h2>
+            
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <!-- <span class="new__tag">New</span> -->
+    
+                            <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc4.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Some of our Clients</h3>
+                                <span class="new__price">Pan India</span>
+                                <br>
+                            </div>
+    
+                            <!-- <button class="button new__button">ADD TO CART</button> -->
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <!-- <span class="new__tag">New</span> -->
+    
+                            <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc1.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Some of our Clients</h3>
+                                <span class="new__price">Pan India</span>
+                                <br>
+                            </div>
+    
+                            <!-- <button class="button new__button">ADD TO CART</button> -->
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <!-- <span class="new__tag">New</span> -->
+    
+                            <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc2.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Some of our Clients</h3>
+                                <span class="new__price">Pan India</span>
+                                <br>
+                            </div>
+    
+                            <!-- <button class="button new__button">ADD TO CART</button> -->
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <!-- <span class="new__tag">New</span> -->
+    
+                            <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc3.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Some of our Clients</h3>
+                                <span class="new__price">Pan India</span>
+                                <br>
+                            </div>
+    
+                            <!-- <button class="button new__button">ADD TO CART</button> -->
+                        </article>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <!-- <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Contact details</h2>
+                    <p class="newsletter__description">
+                        Don't miss out on your discounts. Subscribe to our email 
+                        newsletter to get the best offers, discounts, coupons, 
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main> -->
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <!-- <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>1234 - Peru</li>
+                    <li>La Libertad 43210</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div> -->
+            <div class="footer__content">
+                <h3 class="footer__title">Connect with us</h3>
+
+                <ul class="footer__links">
+                
+                    <li>
+                        <a class="footer__link">Email: info@yoobbel.com</a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=+91-6372995346\" class="footer__link">Phone/WhatsApp: +91-6372995346</a>
+                    </li>
+                    <li>
+                        <a href="https://yoobbel.com/" class="footer__link">e-commerce store: www.yoobbel.com</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#" class="footer__link">About us</a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <!-- <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Road bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Mountain bikes</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Electric</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+
+                    <a href="https://www.instagram.com/yoobbel" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/yoobbeltechnologies" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/yoobbel/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+
+                </ul>
             </div>
         </div>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-               
-                <div style="width: 100%; height: auto; align-items: center; text-align: center;">
-                <img src="https://yoobbel.com/image/catalog/App%20images/Supply/supply1a.jpg" style="height: auto; width: 100%; margin-top:60px; max-width: 1200px;"/>
-                </div>
-             
-            </section>
-
-
-            <div class="featured__data" style="text-align: center; margin-top: 20px;">
-                <h3 class="featured__title">Customized Apparels</h3>
-                <p style="font-size: 12px; margin-bottom: 5px;">Get your custom designed bulk order at best price from India.</p>
-                <span class="featured__price">Contact us for more details</span>
-            </div>
-
-
-
-            <!--==================== FEATURED ====================-->
-            <section class="featured section container" id="featured">
-                <h2 class="section__title">
-                    Products
-                </h2>
-
-                <div class="featured__container grid">
-                    <article class="featured__card">
-                        <span class="featured__tag">CODE- R12</span>
-                        <!-- <a href="sampe images1.html"><span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span></a> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr1.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Promotional T-shirt</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Round Neck | Polyester | 150-160 gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹109 + Printing</span>
-                        </div>
-
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-                    <article class="featured__card">
-                   
-                        <span class="featured__tag">CODE- R13</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr3.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Polo smooth Polyester Tees</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | Polyester | 160-170gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹149 + Printing</span>
-                        </div>
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-                    <article class="featured__card">
-                   
-                        <span class="featured__tag">CODE- R14</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr2a.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Dryfit premium T-shirt</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | Dryfit | 180 gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹199 + Printing</span>
-                        </div>
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-
-                    <article class="featured__card">
-                        <span class="featured__tag">CODE- R15</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr3a.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Premium Pure Cotton T-shirt</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Round Neck | Cotton | 180-200 gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹199 + Printing</span>
-                        </div>
-
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-                    <article class="featured__card">
-                        <span class="featured__tag">CODE- R16</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr4.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">PC Cotton Polo neck</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | PC Cotton | 220-240 gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹249 + Printing</span>
-                        </div>
-
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-                    <article class="featured__card">
-                   
-                        <span class="featured__tag">CODE- R17</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr5.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Premium pure cotton Polo</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Collared Neck | Pure Cotton | 220-240 gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹349 + Printing</span>
-                        </div>
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-                    <article class="featured__card">
-                   
-                        <span class="featured__tag">CODE- R18</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr6.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Promotional Caps</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Cap | PC Cotton | 160 gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹59 + Printing</span>
-                        </div>
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-                    <article class="featured__card">
-                   
-                        <span class="featured__tag">CODE- R18</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr8.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Drawstring Bags</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Bag | Polyester | 140 gsm | MOQ: 100</p>
-                            <span class="featured__price">Plain Price: ₹69 + Printing</span>
-                        </div>
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-                    <article class="featured__card">
-                   
-                        <span class="featured__tag">CODE- R18</span>
-                        <!-- <span class="featured__tag1">Real images <img src="https://yoobbel.com/image/catalog/App%20images/icons/img.png" style="height:20px; width: auto; margin-left: 5px;"/></span> -->
-                        <!-- <span class="featured__tag2">Top Selling</span> -->
-
-                        <img src="assets/img/pr9.jpg" alt="" class="featured__img">
-
-                        <div class="featured__data">
-                            <h3 class="featured__title">Badges with print</h3>
-                            <p style="font-size: 12px; margin-bottom: 5px;">Badges | Fiber | Glossy print | MOQ: 500</p>
-                            <span class="featured__price">Plain Price: ₹25 + Printing</span>
-                        </div>
-
-                        <div class="wacall"> 
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #0bbd59;
-                          border-radius: 5px;
-                          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          margin: 10px 1.5%;">
-                           <div style="align-items: center; display: flex; ">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/wap.png" style="height:30px; width: auto;">
-                             <span style="background-color: inherit; color: white; margin-left:5px;">WhatsApp</span>
-                          </div>
-                          </a>
-                          
-                          <a href="tel:9827705512" style="height: 50px; width: 48%; display: flex; align-items: center;
-                          justify-content: center;
-                          background-color: #1185d9;
-                           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                          border-radius: 5px;
-                          margin: 10px 1.5%;">
-                          <div style="align-items: center; display: flex;">
-                            <img src="https://yoobbel.com/image/catalog/App%20images/Custom/call_og2.png" style="height:30px; width: auto; margin-right: 10px;">
-                            <span style="color: white;">Phone call</span>
-                           </div>
-                           </a>
-                            
-                          </div>
-
-
-                        <!-- <button class="button featured__button">ADD TO CART</button> -->
-                    </article>
-
-
-                </div>
-            </section>
-
-            <!--==================== STORY ====================-->
-            <section class="story section container" id="Printings">
-                <div class="story__container grid">
-                    <div class="story__data">
-                        <h2 class="section__title story__section-title">
-                           With or Withoud print
-                        </h2>
-    
-                        <h1 class="story__title">
-                            Printed products at <br> best price
-                        </h1>
-    
-                        <p class="story__description">
-                            If you want the above t-shirts with print, then contact our team members to get 
-                            the best quotation for your design. We use multiple printing methods depending upon your requirements, which are mentioned below.
-                        </p>
-    
-                        <!-- <a href="#" class="button button--small">Discover</a> -->
-                    </div>
-                    <div class="story__images">
-                        <img src="https://yoobbel.com/image/catalog/App%20images/Supply/IMG_640011.JPG" alt="" class="story__img">
-                        <div class="story__square"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== PRODUCTS ====================-->
-            <section class="products section container" id="products">
-                <h2 class="section__title">
-                    Printings
-                </h2>
-
-                <div class="products__container grid">
-                    <article class="products__card">
-                        <img src="https://yoobbel.com/image/catalog/App%20images/Supply/dtf01.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">DTF Print</h3>
-                        <span class="products__price">Multi-Color</span>
-
-                        <!-- <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button> -->
-                    </article>
-
-                    <article class="products__card">
-                        <img src="https://yoobbel.com/image/catalog/App%20images/Supply/screen01.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">Screen Print</h3>
-                        <span class="products__price">Solid Color</span>
-
-                        <!-- <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button> -->
-                    </article>
-
-                    <article class="products__card">
-                        <img src="https://yoobbel.com/image/catalog/App%20images/Supply/vinyl01.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">Vinyl Print</h3>
-                        <span class="products__price">Solid Color</span>
-
-                        <!-- <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button> -->
-                    </article>
-
-                    <article class="products__card">
-                        <img src="https://yoobbel.com/image/catalog/App%20images/Supply/subli01.jpg" alt="" class="products__img">
-
-                        <h3 class="products__title">Sublimation</h3>
-                        <span class="products__price">Multi (Light polyester)</span>
-
-                        <!-- <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button> -->
-                    </article>
-
-                    <!-- <article class="products__card">
-                        <img src="assets/img/product5.png" alt="" class="products__img">
-
-                        <h3 class="products__title">Duchen</h3>
-                        <span class="products__price">$950</span>
-
-                        <button class="products__button">
-                            <i class='bx bx-shopping-bag'></i>
-                        </button>
-                    </article> -->
-                </div>
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <!-- <section class="testimonial section container">
-                <div class="testimonial__container grid">
-                    <div class="swiper testimonial-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="testimonial__card swiper-slide">
-                                <div class="testimonial__quote">
-                                    <i class='bx bxs-quote-alt-left' ></i>
-                                </div>
-                                <p class="testimonial__description">
-                                    They are the best watches that one acquires, also they are always with the latest 
-                                    news and trends, with a very comfortable price and especially with the attention 
-                                    you receive, they are always attentive to your questions.
-                                </p>
-                                <h3 class="testimonial__date">March 27. 2021</h3>
-        
-                                <div class="testimonial__perfil">
-                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
-        
-                                    <div class="testimonial__perfil-data">
-                                        <span class="testimonial__perfil-name">Lee Doe</span>
-                                        <span class="testimonial__perfil-detail">Director of a company</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial__card swiper-slide">
-                                <div class="testimonial__quote">
-                                    <i class='bx bxs-quote-alt-left' ></i>
-                                </div>
-                                <p class="testimonial__description">
-                                    They are the best watches that one acquires, also they are always with the latest 
-                                    news and trends, with a very comfortable price and especially with the attention 
-                                    you receive, they are always attentive to your questions.
-                                </p>
-                                <h3 class="testimonial__date">March 27. 2021</h3>
-        
-                                <div class="testimonial__perfil">
-                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
-        
-                                    <div class="testimonial__perfil-data">
-                                        <span class="testimonial__perfil-name">Samantha Mey</span>
-                                        <span class="testimonial__perfil-detail">Director of a company</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonial__card swiper-slide">
-                                <div class="testimonial__quote">
-                                    <i class='bx bxs-quote-alt-left' ></i>
-                                </div>
-                                <p class="testimonial__description">
-                                    They are the best watches that one acquires, also they are always with the latest 
-                                    news and trends, with a very comfortable price and especially with the attention 
-                                    you receive, they are always attentive to your questions.
-                                </p>
-                                <h3 class="testimonial__date">March 27. 2021</h3>
-        
-                                <div class="testimonial__perfil">
-                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
-        
-                                    <div class="testimonial__perfil-data">
-                                        <span class="testimonial__perfil-name">Raul Zaman</span>
-                                        <span class="testimonial__perfil-detail">Director of a company</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-button-next">
-                            <i class='bx bx-right-arrow-alt' ></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class='bx bx-left-arrow-alt' ></i>
-                        </div>
-                    </div>
-
-                    <div class="testimonial__images">
-                        <div class="testimonial__square"></div>
-                        <img src="assets/img/testimonial.png" alt="" class="testimonial__img">
-                    </div>
-                </div>
-            </section> -->
-
-            <!--==================== NEW ====================-->
-            <section class="new section container" id="new">
-                <h2 class="section__title">
-                    Our Clients
-                </h2>
-                
-                <div class="new__container">
-                    <div class="swiper new-swiper">
-                        <div class="swiper-wrapper">
-                            <article class="new__card swiper-slide">
-                                <!-- <span class="new__tag">New</span> -->
-        
-                                <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc4.jpg" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Some of our Clients</h3>
-                                    <span class="new__price">Pan India</span>
-                                    <br>
-                                </div>
-        
-                                <!-- <button class="button new__button">ADD TO CART</button> -->
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <!-- <span class="new__tag">New</span> -->
-        
-                                <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc1.jpg" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Some of our Clients</h3>
-                                    <span class="new__price">Pan India</span>
-                                    <br>
-                                </div>
-        
-                                <!-- <button class="button new__button">ADD TO CART</button> -->
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <!-- <span class="new__tag">New</span> -->
-        
-                                <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc2.jpg" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Some of our Clients</h3>
-                                    <span class="new__price">Pan India</span>
-                                    <br>
-                                </div>
-        
-                                <!-- <button class="button new__button">ADD TO CART</button> -->
-                            </article>
-
-                            <article class="new__card swiper-slide">
-                                <!-- <span class="new__tag">New</span> -->
-        
-                                <img src="https://yoobbel.com/image/catalog/App%20images/Supply/sooc3.jpg" alt="" class="new__img">
-        
-                                <div class="new__data">
-                                    <h3 class="new__title">Some of our Clients</h3>
-                                    <span class="new__price">Pan India</span>
-                                    <br>
-                                </div>
-        
-                                <!-- <button class="button new__button">ADD TO CART</button> -->
-                            </article>                       
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== NEWSLETTER ====================-->
-            <!-- <section class="newsletter section container">
-                <div class="newsletter__bg grid">
-                    <div>
-                        <h2 class="newsletter__title">Contact details</h2>
-                        <p class="newsletter__description">
-                            Don't miss out on your discounts. Subscribe to our email 
-                            newsletter to get the best offers, discounts, coupons, 
-                            gifts and much more.
-                        </p>
-                    </div>
-
-                    <form action="" class="newsletter__subscribe">
-                        <input type="email" placeholder="Enter your email" class="newsletter__input">
-                        <button class="button">
-                            SUBSCRIBE
-                        </button>
-                    </form>
-                </div>
-            </section>
-        </main> -->
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <!-- <div class="footer__content">
-                    <h3 class="footer__title">Our information</h3>
-
-                    <ul class="footer__list">
-                        <li>1234 - Peru</li>
-                        <li>La Libertad 43210</li>
-                        <li>123-456-789</li>
-                    </ul>
-                </div> -->
-                <div class="footer__content">
-                    <h3 class="footer__title">Connect with us</h3>
-
-                    <ul class="footer__links">
-                    
-                        <li>
-                            <a class="footer__link">Email: info@yoobbel.com</a>
-                        </li>
-                        <li>
-                            <a href="https://api.whatsapp.com/send?phone=+91-9827705512\" class="footer__link">Phone/WhatsApp: +91-9827705512</a>
-                        </li>
-                        <li>
-                            <a href="https://yoobbel.com/" class="footer__link">e-commerce store: www.yoobbel.com</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#" class="footer__link">About us</a>
-                        </li> -->
-                    </ul>
-                </div>
-
-                <!-- <div class="footer__content">
-                    <h3 class="footer__title">Product</h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Road bikes</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Mountain bikes</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Electric</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Accesories</a>
-                        </li>
-                    </ul>
-                </div> -->
-
-                <div class="footer__content">
-                    <h3 class="footer__title">Social</h3>
-
-                    <ul class="footer__social">
-
-                        <a href="https://www.instagram.com/yoobbel" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-instagram' ></i>
-                        </a>
-
-                        <a href="https://www.facebook.com/yoobbeltechnologies" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/company/yoobbel/" target="_blank" class="footer__social-link">
-                            <i class='bx bxl-linkedin' ></i>
-                        </a>
-
-                    </ul>
-                </div>
-            </div>
-
-            <span class="footer__copy">&#169; Yoobbel India, All rigths reserved</span>
-        </footer>
-
-        <!--=============== SCROLL UP ===============-->
-        <a href="#" class="scrollup" id="scroll-up"> 
-            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
-        </a>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <span class="footer__copy">&#169; Yoobbel India, All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
