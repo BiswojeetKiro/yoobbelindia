@@ -12,7 +12,7 @@
   --title-color: hsl(0, 0%, 15%);
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 55%);
-  --body-color: hsl(0, 0%, 97.5%);
+  --body-color: hsl(0, 0%, 99%);
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
 
@@ -56,6 +56,53 @@
   }
 }
 
+/* =============== Our clients slider=============== */
+
+
+.slider-area h2 {
+	text-align: center;
+	font-size: 14px;
+	margin: 20px 0 20px 0;
+	color: #3b3b3b;
+}
+.wrapper {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.items {
+	animation: animate 40s alternate linear infinite;
+}
+
+.logoimg {
+ width: 120px !important;
+}
+
+.container:hover .items {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-1500px, 0, 0);
+	}
+}
+@media (max-width:767px) {
+	.slider-area h2 {
+		font-size: 30px;
+	}
+	.wrapper {
+		width: 95%;
+		border-radius: 0;
+	}
+}
+
+
+
+
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -96,7 +143,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 

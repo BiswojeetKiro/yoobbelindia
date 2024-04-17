@@ -1,6 +1,5 @@
 ul[data-bsp-ul-index] {
           padding:0 0 0 0;
-          margin:0 0 40px 0;
  }
 ul[data-bsp-ul-index] li {
           list-style:none;
@@ -117,7 +116,7 @@ a.bsp-controls:hover {
 
 .bspImgWrapper {
   overflow: hidden;
-  height: 100px;
+  height: 250px;
   background-position-x: center !important;
   background-position-y: center !important;
   background-size: cover !important;
@@ -131,6 +130,6 @@ a.bsp-controls:hover {
 
 @media screen and (max-width: 575px){
   .bspImgWrapper {
-    height: 150px;
+    height: 280px;
   }
 }
